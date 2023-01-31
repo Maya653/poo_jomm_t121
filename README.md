@@ -5,5 +5,4 @@
 |No1.|Archivo|Descripción|
 |--|--|--|
 |1|programa0.py|Hola mundo en python|
-
-|2.2|programa2.py|concatenacion utilizando format|
+|2|programa2.py|concatenacion utilizando format|
