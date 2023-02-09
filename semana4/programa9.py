@@ -5,6 +5,7 @@
 """""
 numero1=int(input("ingresa el valor1: "))
 numero2=int(input("ingresa el valor2:"))
+   
 #SOLUCCIÓN 1
 if numero1 > numero2:
     print(numero1)
@@ -12,6 +13,7 @@ if numero2 > numero1:
     print(numero2)
 if numero1 == numero2:
     print(None)
+
 #SOLUCCIÓN 2
 if numero2 > numero1:
     print(numero2)
@@ -19,6 +21,7 @@ if numero1 > numero2:
     print(numero1)
 else:
     print(None)
+    
     #Solucción 3:
 if numero1 > numero2:
     print(numero1)
@@ -26,5 +29,37 @@ elif numero2 > numero1:
     print(numero2)
 else:
     print(None)
+
+    #Solucción:4
+if numero1 == numero2:
+    print(None)
+elif numero1 > numero2:
+    print(numero1)
+elif numero2 > numero1:
+    print(numero2)
     
-    
+    #Solucción 5
+if numero1 <numero2:
+	print(numero2)
+if numero2 <numero1:
+	print(numero1)
+if numero1 == numero2:
+	print(None)
+
+    #Solucción 6
+if numero2 > numero1:
+	print(numero2)
+if numero2 < numero1:
+	print(numero1)
+else:
+	print(None)
+
+    #Solucción 7 
+if(numero2 < numero1 > numero2):
+	print (numero1)
+elif(numero1 < numero2 > numero1):
+	print(numero2)
+else:
+	print(None)
+
+
