@@ -12,3 +12,5 @@
 |6|programa6.py|calculo de perimetro y area de triangulo cualquiera|
 |7|programa7.py|calculo de un circulo y cuadrado|
 |8|programa8.py|compare 2 numeros enteros e imprima el mayor de ellos|
+
+|10|programa10.py|utilzando la definicón de mayor
