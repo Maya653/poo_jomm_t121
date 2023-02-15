@@ -1,0 +1,1 @@
+# no puede hacer el dia de hoy,  apenas voy terminando el direccionamiento de redes y ya no me dio tiempo de hacer el reto del dia de hoy ya son las 11:51 , toy cansado   
