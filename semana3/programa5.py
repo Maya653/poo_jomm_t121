@@ -28,6 +28,5 @@ numero1 = int (input("Ingrese numero1: ")) # se creo una variable de tipo entero
 numero2 = 2 # es una variable con un valor establecido con el numero 2
 result=numero1**numero2  # es una variable que hara la operacion de potencia num1 y num2  
 print("la potencia de ",numero1,"y", numero2,"es",result)  # imprimira el resultado de la opracion de num1 y num2
-    
 
 
