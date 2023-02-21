@@ -1,6 +1,6 @@
 """"
     Nombre:johan Obed Maya Morales
-    Fecha:6-Feb-2023
+    Fecha:16-Feb-2023
     Descripción: calificacion de un alimno mayor a 8
 """"" 
 
