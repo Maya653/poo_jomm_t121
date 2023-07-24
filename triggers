@@ -1,35 +1,35 @@
 CREATE TABLE IF NOT EXISTS producto(
-    id_producto INTEGER PRIMARY KEY AUTOINCREMENT,
-    precio_unitario INTEGER
+    id_producto              integer     PRIMARY key  AUTOINCREMENT,
+    precio_unitario          integer
 );
+
 
 CREATE TABLE IF NOT EXISTS detalle_ventas(
-    id_detalle INTEGER PRIMARY KEY AUTOINCREMENT,
-    id_venta INTEGER,
-    id_producto INTEGER,
-    precio_unitario INTEGER,
-    cantidad_producto INTEGER,
-    total_x_producto INTEGER
+    id_detalle               integer     PRIMARY key AUTOINCREMENT,
+    id_venta                 integer,
+    id_producto              integer,
+    precio_unitario          integer,
+    cantidad_producto        integer,
+    total_x_producto         integer
 );
 
-INSERT INTO producto(id_producto, precio_unitario)
-VALUES (1, 10);
 
-INSERT INTO detalle_ventas(id_detalle, id_venta, id_producto, cantidad_producto, precio_unitario, total_x_producto)
-VALUES (1, 1, 2, 20, 2, 40);
+INSERT INTO producto(id_producto,precio_unitario)
+VALUES (1,10)
+
+INSERT INTO detalle_ventas(id_detalle,id_venta,id_producto,cantidad_producto,precio_unitario,total_x_producto)
+VALUES (1,1,2,20,2,40);
+
+
 
 CREATE TRIGGER hola
-AFTER INSERT ON detalle_ventas
-FOR EACH ROW
+   AFTER INSERT ON detalle_ventas
 BEGIN
     UPDATE detalle_ventas
-    SET precio_unitario = (SELECT precio_unitario FROM producto WHERE producto.id_producto = NEW.id_producto)
-    WHERE id_detalle = NEW.id_detalle;
+    SET precio_unitario = (SELECT precio_unitario FROM producto where detalle_ventas.id_producto = producto.id_producto)
+    where id_detalle = new.id_detalle;
 END;
-
 SELECT * FROM detalle_ventas;
-
-INSERT INTO detalle_ventas(id_detalle, id_venta, id_producto, cantidad_producto, precio_unitario, total_x_producto)
-VALUES (1, 1, 2, 20, 2, 40);
-
+INSERT INTO detalle_ventas(id_detalle,id_venta,id_producto,cantidad_producto,precio_unitario,total_x_producto)
+VALUES (1,1,20,2,40);
 SELECT * FROM detalle_ventas;
